@@ -1,0 +1,17 @@
+{
+  "name": "Metalens SEO tool",
+  "description": "Simple yet powerful tool to see metadata of your webisite",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "affiliate_disclosure": "This extension contains a Hostinger affiliate link. We may earn a commission if you purchase through this link at no additional cost to you.",
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": "icons/cp-icon-32.png"
+  },
+  "icons": {
+    "16": "icons/cp-icon-16.png",
+    "32": "icons/cp-icon-32.png",
+    "48": "icons/cp-icon-48.png",
+    "128": "icons/cp-icon-128.png"
+  }
+}
