@@ -1,0 +1,1 @@
+// This script will do all the things related to the current webpage
