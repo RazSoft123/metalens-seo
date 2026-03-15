@@ -8,8 +8,18 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "GET_SEO_DATA") {
 
         // Collecting SEO data
+        let title = document.title;
+        let description = document.querySelector(`meta[name="description"]`)?.content || "missing";
+        let themeColor = document.querySelector(`meta[name="theme-color"]`)?.content || "missing";
+        let keywords = document.querySelector(`meta[name="keywords"]`)?.content || "missing";
+        let robots = document.querySelector(`meta[name="robots"]`)?.content || "missing";
+
         const seoData = {
-            title: document.title
+            title: title,
+            description: description,
+            themeColor: themeColor,
+            keywords: keywords,
+            robots: robots
         }
 
         sendResponse(seoData);
