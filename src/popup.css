@@ -104,3 +104,33 @@ body {
   width: 100%;
   padding: 20px;
 }
+
+.content-box {
+  width: 100%;
+  padding: 4px 8px;
+  background-color: var(--primary-light-500);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-box-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-dark-400);
+}
+
+.content-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primary-dark-600);
+}
