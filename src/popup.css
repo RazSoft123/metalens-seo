@@ -134,3 +134,25 @@ body {
   font-weight: 400;
   color: var(--primary-dark-600);
 }
+
+.keyword-text {
+  display: inline-block;
+  border-radius: 16px;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  background-color: var(--primary-light-200);
+}
+
+.canonical-text {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 8px;
+  color: var(--primary-dark-600);
+  transition: all 0.3s linear;
+}
+
+.canonical-text:hover {
+  background-color: var(--primary-dark-600);
+  color: var(--primary-light-600);
+}
