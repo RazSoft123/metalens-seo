@@ -61,3 +61,44 @@
 //     })
 
 // }
+
+// The script will handle the clicks and render the different tab according to that.
+
+function renderContentBox(title, title2, color, title3, paragraph) {
+    return `
+        <div class="content-box">
+            <div class="content-box-title">
+                <span class="title-text">${title}</span>
+                <div>
+                    <span class="title-text">${title2}</span>
+                    <span class="title-text" style="color: ${color}">${title3}</span>
+                </div>
+            </div>
+            <div>
+                <p class="content-text">${paragraph}</p>
+            </div>
+        </div>
+    `;
+}
+
+// function setActiveTab(e) {
+//     const navItems = document.querySelectorAll('.nav-item');
+//     if (navItems) {
+//         navItems.forEach(navItem => navItem.classList.remove('active'));
+//     }
+
+//     e.target.classList.add("active");
+// }
+
+// All the script inside it will run after DOM content will be loaded
+document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.nav-item');
+    if (navItems) {
+        navItems.forEach(navItem => {
+            navItem.addEventListener('click', function (e) {
+                navItems.forEach(navItem => navItem.classList.remove('active'));
+                e.currentTarget.classList.add("active");
+            })
+        })
+    }
+});

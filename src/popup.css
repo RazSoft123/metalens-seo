@@ -89,6 +89,7 @@ body {
 .nav-item {
   cursor: pointer;
   color: var(--primary-dark-600);
+  width: 100%;
   font-size: 14px;
   font-weight: 600;
   padding: 4px 8px;
@@ -98,6 +99,10 @@ body {
 .nav-item a {
   text-decoration: none;
   color: inherit;
+}
+
+.nav-item.active {
+  background-color: var(--primary);
 }
 
 .main-content {
